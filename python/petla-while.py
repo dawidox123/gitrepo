@@ -14,6 +14,13 @@ def main(args):
     
     stop = int(input("podaj drugą liczbę: "))
     
+    while start >= stop:
+        print("błąd")
+        stop = int(input("podaj drugą liczbę: "))
+        
+    
+    
+    
     if start >= stop:
         print("błędne dane")
         exit(0)
