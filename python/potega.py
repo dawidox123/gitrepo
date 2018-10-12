@@ -2,16 +2,12 @@
 # -*- coding: utf-8 -*-
 #
 #  potega.py
-#  
-#  
-#  
-#  
 
 def potega_it(a, n):
     wynik = 1
     for i in range(n):
-        print(wynik)
         wynik = wynik * a
+        print(wynik)
     
     return wynik
     

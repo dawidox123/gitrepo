@@ -15,8 +15,6 @@ def main(args):
     
     for liczba in range(n + 1):
         print(liczba**2, " ", end="")
-        
-        
     
     return 0
 
