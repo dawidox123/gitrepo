@@ -13,7 +13,10 @@ def potega_it(a, n):
     
 
 def main(args):
-    potega_it(3, 4)
+   
+    a = int(input("podaj podstawę "))
+    n = int(input("podaj wykadnik:"))
+    potega_it(a, n)
     return 0
 
 if __name__ == '__main__':
