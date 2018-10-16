@@ -7,13 +7,15 @@ def potega_it(a, n):
     wynik = 1
     for i in range(n):
         wynik = wynik * a
-        print(wynik)
+        #print(wynik)
     
     return wynik
     
 
 def main(args):
-    potega_it(3, 4)
+   # potega_it(3, 7)
+    assert(potega_it(0, 2) == 0)
+    assert(potega_it(2, 2) == 4)
     return 0
 
 if __name__ == '__main__':
