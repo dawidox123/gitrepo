@@ -24,6 +24,7 @@ def main(args):
 
     print(sumuj(a, b))
     print(roznica(a, b))
+    print(iloczyn(a, b))
 
 
 if __name__ == '__main__':

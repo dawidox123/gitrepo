@@ -16,6 +16,10 @@ def main(args):
    # potega_it(3, 7)
     assert(potega_it(0, 2) == 0)
     assert(potega_it(2, 2) == 4)
+   
+    #a = int(input("podaj podstawę "))
+    #n = int(input("podaj wykadnik:"))
+    #potega_it(a, n)
     return 0
 
 if __name__ == '__main__':

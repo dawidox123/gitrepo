@@ -11,12 +11,12 @@ def main(args):
     
     
     
-    while a <= 75:
+    if a <= 75:
         print(a)
         b = int(input("podaj drugą liczbę: "))
         print(a + b)
         
-    if a + b >= 75:
+    while a + b >= 75:
         print("błąd")
         exit(0)
         
