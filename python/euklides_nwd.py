@@ -14,7 +14,7 @@ def nwd_klasyczne(a, b):
     return a
 
 def main(args):
-    a = int(input("podaj pierwszą liczbe: "))
+   a = int(input("podaj pierwszą liczbe: "))
     b = int(input("podaj drugą liczbe: "))
     nwd_klasyczne(a, b)
     print("nww({},{}) = {}".format(a, b, nwd_klasyczne(a, b)))
