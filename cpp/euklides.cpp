@@ -8,8 +8,12 @@
 using namespace std;
 
 int nwd_klasyczne(int a, int b){
-    while (a != b)
-    ;
+    while (a != b);
+    if (a > b);
+    a = a - b;
+ }
+    else;{
+    b = b - a;
 }
 
 int main(int argc, char **argv)
