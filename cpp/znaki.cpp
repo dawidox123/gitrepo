@@ -9,7 +9,12 @@
 using namespace std;
 
 woid liczznaki(char tab[], int roz) {
-    
+    int spacje = 0;
+    int interpunkcja = 0;
+    for (int i=0; i<roz; i++) {
+		if (tab[i] == '.'   tab[i] == ',')
+		interpunkcja++;
+		}
     }
 
 int zlicz(char tab[]) {
