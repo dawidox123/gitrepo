@@ -32,8 +32,8 @@ void minmax(int tab[], int rozmiar){
             maksimum = tab[i];
         
     }
-     cout << "maks:" << maksimum << endl;
-     cout << "min:" << minimum << endl;
+     cout << "maks: " << maksimum << endl;
+     cout << "min: " << minimum << endl;
 }
 
 
