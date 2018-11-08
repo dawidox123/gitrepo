@@ -8,14 +8,39 @@
 #include <iostream>
 using namespace std;
 
-woid liczznaki(char tab[], int roz) {
+void liczznaki(char tab[], int roz) {
     int spacje = 0;
     int interpunkcja = 0;
-    for (int i=0; i<roz; i++) {
-		if (tab[i] == '.'   tab[i] == ',')
-		interpunkcja++;
-		}
+    int symbole = 0;
+    int reszta = 0;
+    for (int i = 0; i<roz; i++) {
+		//~if (tab[i] == ' ' ) spacje++;
+        //~else if(tab[i] == '.'|| tab[i] == ',')
+        //~cout << tab[i] << " ";
+		//~interpunkcja++;
+        switch (tab[i]){
+            case ' ':
+            case '\t':
+                spacje++;
+            break;
+            case '.':
+            case ',':
+                interpunkcja++;
+            break;
+            case '(':
+            case ')':
+                symbole++;
+            break;
+            default:
+                reszta++;
+                
+        }
     }
+    cout << "spacje: " << spacje << endl;
+    cout << "interpunkcje: " << interpunkcja << endl;
+    cout << "symbole: " << symbole << endl;
+    cout << "reszta: " << reszta << endl;
+}
 
 int zlicz(char tab[]) {
     int i = 0;
@@ -34,14 +59,26 @@ void drukuj(char tab[], int rozmiar){
 }
 
 
+void ascii(char tab[], int rozmiar){
+    int kod = 0;
+    for (int i= 0; i < rozmiar; i++) {
+        kod = (int)tab[i];
+        if (kod > 96 && kod < 123)
+            cout << (char)(kod-32)<< " ";
+        else
+            cout << (int)tab[i]<< " ";
+    }
+}
+
 int main(int argc, char **argv)
-{const int rozmiar = 20;
+{   const int rozmiar = 20;
     char tab[rozmiar];
     cout << "jak sie nazywasz" << endl;
     //cin >> tab;
     cin.getline(tab, rozmiar);
-    cout << tab;
-    drukuj(tab, zlicz(tab));
+    
+    ascii(tab, zlicz(tab));
+    liczznaki(tab, zlicz(tab));
     
     
 	
