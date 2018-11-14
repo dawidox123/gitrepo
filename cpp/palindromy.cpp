@@ -8,7 +8,9 @@
 #include <iostream>
 using namespace std;
 
-
+bool palindrom(char tab[], int roz) {
+    bool czyPal = true;
+	for (int i = 0; i < roz / 2; i++)
 
 
 int main(int argc, char **argv) 
