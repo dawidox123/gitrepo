@@ -1,6 +1,5 @@
 /*
- * znaki.cpp
- * 
+ * litery.cpp
  * 
  */
 
@@ -9,10 +8,9 @@
 using namespace std;
 
 void liczznaki(char tab[], int roz) {
-    int spacje = 0;
-    int interpunkcja = 0;
-    int symbole = 0;
-    int reszta = 0;
+  
+    int samogloski = 0; 
+   
     for (int i = 0; i<roz; i++) {
 		//~if (tab[i] == ' ' ) spacje++;
         //~else if(tab[i] == '.'|| tab[i] == ',')
@@ -42,42 +40,14 @@ void liczznaki(char tab[], int roz) {
     cout << "reszta: " << reszta << endl;
 }
 
-int zlicz(char tab[]) {
-    int i = 0;
-    while (tab[i] != '\0') i++;
-    return i;
-}
-
-void drukuj(char tab[], int rozmiar){
-    for (int i= 0; i < rozmiar; i++) {
-        cout << tab[i]<< " ";
-    }
-}
-
-
-void ascii(char tab[], int rozmiar){
-    int kod = 0;
-    for (int i= 0; i < rozmiar; i++) {
-        kod = (int)tab[i];
-        if (kod > 96 && kod < 123)
-            cout << (char)(kod-32)<< " ";
-        else if (kod > 64 && kod < 91)
-            cout << (char)(kod+32)<< " ";
-        else
-            cout << (int)tab[i]<< " ";
-    }
-}
-
 int main(int argc, char **argv)
-{   const int rozmiar = 20;
+{
+    int rozmiar = 10;
     char tab[rozmiar];
-    cout << "jak sie nazywasz" << endl;
-    //cin >> tab;
-    cin.getline(tab, rozmiar);
-    ascii(tab, zlicz(tab));
-    liczznaki(tab, zlicz(tab));
-    
-    
+     cout << "podaj wyraz lub zdanie: ";
+     cin.getline (tab, rozmiar);
+     cout << tab;
+     char 
 	
 	return 0;
 }
