@@ -17,11 +17,10 @@ void drukujw(int stopien, float tbwsp[]) {
 }
 
 float horner_it(float x, int stopien, float tbwsp[]) {
-    // 2x^3 +3x^2 + 2x + 4
-    // x (x (2x + 3) + 5) + 4
     float wynik = tbwsp[0];
-    for (i = 1; i <= stopien; i++) {
-        wynik = ;
+    for (int i = 1; i <= stopien; i++) {
+       wynik = wynik * x + tbwsp[i];
+        cout << wynik;
     }
 }
 
