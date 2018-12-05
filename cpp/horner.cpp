@@ -20,8 +20,9 @@ float horner_it(float x, int stopien, float tbwsp[]) {
     float wynik = tbwsp[0];
     for (int i = 1; i <= stopien; i++) {
        wynik = wynik * x + tbwsp[i];
-        cout << wynik;
+        
     }
+    return wynik;
 }
 
 
