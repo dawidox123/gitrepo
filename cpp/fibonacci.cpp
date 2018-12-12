@@ -40,7 +40,12 @@ int main(int argc, char **argv)
     cout << "podaj numer wyrazu ciagu: ";
     cin >> n;
     cout << "ciag Fibonacciego do wyrazu "<< n << ": " << endl;
-    cout << fibonacci_it(n);
+    for (int i = 0; i <= n; i++) {
+        if (n > 0)
+        cout << (float)fibonacci_it(i+1) / (float)fibonacci_it(i) << endl; 
+    }           
+    cout << fibonacci_re(n);
+    
     
 	
 	return 0;

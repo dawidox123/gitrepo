@@ -24,6 +24,12 @@ float horner_it(float x, int stopien, float tbwsp[]) {
     }
     return wynik;
 }
+float horner_re(float x, int stopien, float tbwsp[]) {
+    if (stopien == 0)
+        return tbwsp[0];
+    return horner_re(x, stopien - 1, tbwsp) * x + tbwsp[stopien];
+
+}
 
 
 int main(int argc, char **argv)
@@ -43,6 +49,7 @@ int main(int argc, char **argv)
     cin >> x;
     drukujw(stopien, tbwsp);
     cout << horner_it(x, stopien, tbwsp) << endl;
+    cout << horner_re(x, stopien, tbwsp) << endl;
 	return 0;
 }
 
