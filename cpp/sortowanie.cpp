@@ -55,7 +55,7 @@ void sort_buble(int tab[], int n) {
 
 int main(int argc, char **argv)
 {
-    int roz = 20;
+    int roz = 200;
     int tab[roz];
     wypelnij(tab, roz);
     cout << endl;
