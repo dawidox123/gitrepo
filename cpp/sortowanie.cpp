@@ -51,6 +51,17 @@ void sort_buble(int tab[], int n) {
         }
     }
     
+void sort_selection(int tab[], int n) {
+    int i, j, k;
+    for (i=0;i<n;i++) {
+        k =i;
+        for (j=i+1;j<n;j++) {
+            if (tab[j]<tab[k])
+            k=j;
+            }
+            zamien1(tab[i], tab[k]);
+        }
+    }
     
 
 int main(int argc, char **argv)
