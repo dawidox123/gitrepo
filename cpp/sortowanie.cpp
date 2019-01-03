@@ -14,7 +14,7 @@ using namespace std;
 void wypelnij(int tab[], int rozmiar){
     srand(time(NULL));
     for (int i= 0; i < rozmiar; i++) {
-        tab[i]=rand() % 101;
+        tab[i]=rand() % 1011;
         //cin >> tab[i];
     }
 }
@@ -72,6 +72,7 @@ int main(int argc, char **argv)
     cout << endl;
     drukuj(tab, roz);
     sort_buble(tab, roz);
+    //~sort_selection(tab, n);
     drukuj(tab, roz);
     cout << endl;
     //int a = 5; int b = 10;
