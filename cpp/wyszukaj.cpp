@@ -49,7 +49,7 @@ int szukaj_lin(int tab[], int roz, int szuk) {
 
 int wyszukaj_bin_lin(int tab[], int roz, int szuk){
     int p, k, s;
-    p = -1;
+    p = 0;
     k = roz - 1;
     while (p <= k) {
         s = (p+k)/2;
@@ -76,8 +76,9 @@ int main(int argc, char **argv)
     //~else
         //~cout << "nie znaleziono";
 	sort_insert(tab, roz);
+    drukuj(tab, roz);
     int indeks=wyszukaj_bin_lin(tab, roz, szuk);
-    cout << indeks;
+    cout << "element: " << indeks;
 	return 0;
 }
 
