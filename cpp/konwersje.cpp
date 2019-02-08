@@ -9,13 +9,17 @@
 #include <iostream>
 using namespace std;
 
-void   deck2any(int l. int p) {
+void dec2any(int l, int p) {
     int r[8];
-    du{
+    int i = 0;
+    do{
        r[i] = l%p;
        l = l/p;
        i++; 
-        
+    }while(l != 0);
+    
+    for (i=i-1;i>=0;i--) {
+        cout << r[i];
     }
 }
 
@@ -27,7 +31,7 @@ int main(int argc, char **argv)
     cin >> l;
     cout << "podaj podstawe: ";
     cin >> p;
-    deck2any(l. p);
+    dec2any(l, p);
 	
 	return 0;
 }
