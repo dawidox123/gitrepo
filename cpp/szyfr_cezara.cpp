@@ -14,9 +14,17 @@ using namespace std;
 void szyfruj(char t[], int k) {
     int kod=0; int i = 0;
    while (t[i] !='\0') {
-       kod = (int) t[i];
-       kod==k;
-       cout << (char)kod;
+       if (t[i]==' ') cout << t[i];
+       else {
+        kod = (int) t[i];
+        if (kod<91);
+        kod = kod -
+        kod+=k;
+        if (kod>122);
+        kod = kod - 26;
+       
+        cout << (char)kod;
+        }
        i++;
        }
     }
