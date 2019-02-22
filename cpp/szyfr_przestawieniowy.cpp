@@ -18,6 +18,17 @@ void szyfruj(char t[], int k) {
     int reszta;
     reszta = ilo & k;
     cout << reszta;
+    int i = 0;
+    for (i = 0;i<k-reszta;i++) {
+        t[ilo+i] = '.';
+    }
+    t[ilo+i] = '\0';
+    
+    i = 0;
+    while (t[i]!='\0') {
+        cout << t[i];
+        i++;
+        }
     
     }
 
