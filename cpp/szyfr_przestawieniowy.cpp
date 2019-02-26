@@ -16,13 +16,21 @@ void szyfruj(char t[], int k) {
     int ilo = strlen(t);
     cout <<  ilo << endl;;
     int reszta;
-    reszta = ilo & k;
-    cout << reszta;
+    reszta = ilo % k;
+    cout << reszta << endl;
     int i = 0;
     for (i = 0;i<k-reszta;i++) {
         t[ilo+i] = '.';
     }
     t[ilo+i] = '\0';
+    drukuj(tab);
+    ile = strlen(t);
+    cout << endl;
+    for (i=0;i<k;i++) {
+        for (int j = i;j<ilo;j+=k) {
+            
+            cout << t[j];}
+        }
     
     i = 0;
     while (t[i]!='\0') {
