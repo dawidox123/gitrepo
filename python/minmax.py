@@ -35,7 +35,7 @@ def maksimum(lista):
 
 
 def main(args):
-	lista = losuj(10, 50)
+	lista = losuj(2, 4)
 	assert minimum([7, 5, 2, 1, 7]) == 1
 	assert maksimum([7, 5, 2, 1, 7]) == 7
 	print("Min: ", minimum(lista))
