@@ -13,7 +13,13 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    
+    string m;
+    string n;
+        cout << "podaj imie: ";
+        cin >> m;
+            cout << "podaj nazwisko: ";
+            cin >> n;
+                cout << m << " " << n << endl;
     
 	
 	return 0;
